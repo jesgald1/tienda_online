@@ -1,0 +1,69 @@
+:root {
+  --letra-principal: "Staatliches", sans-serif;
+  --primario: #34eba1;
+  --blanco: var(--blanco);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*Globales*/
+
+body {
+  background-color: var(--primario);
+  font-family: var(--letra-principal);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--blanco);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: black;
+  font-family: var(--letra-principal);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+span {
+    font-size: 2rem;
+    color: black;
+  }
