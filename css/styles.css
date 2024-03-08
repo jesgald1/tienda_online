@@ -127,22 +127,64 @@ span {
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
   }
 }
 
 /*Productos*/
 .producto {
   background-color: #32a877;
+  padding: 1rem;
 }
 
 .producto_info {
 }
 
 .producto_imagen {
+  width: 100%;
 }
 
 .producto_nombre {
+  font-size: 4rem;
 }
 
 .producto_precio {
+  font-size: 2.8rem;
+  color: blueviolet;
+}
+
+.producto_nombre,
+.producto_precio {
+  font-family: var(--letra-principal);
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/*Grafico*/
+
+.grafico {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grafico--camisas {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  background-image: url(../img/grafico1.jpg);
+}
+
+.grafico--node {
+  background-image: url(../img/grafico2.jpg);
+  grid-column: 1 / 3;
+  grid-row: 8 / 9;
+}
+
+@media (min-with: 768px) {
+  .grafico--node {
+    grid-row: 5 / 6;
+    grid-column: 2 / 4;
+  }
 }
