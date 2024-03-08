@@ -85,19 +85,16 @@ span {
 
 /*Footer*/
 
-.footer{
+.footer {
   background-color: darkgray;
   padding: 1rem 0;
   margin-top: 2rem;
-
 }
 
-.footer__estilos{
-  font-family:var(--letra-principal);
+.footer__estilos {
+  font-family: var(--letra-principal);
   text-align: center;
   font-size: 2.2rem;
-
-
 }
 
 /*NAVEGACION*/
@@ -114,11 +111,38 @@ span {
   font-family: var(--letra-principal);
   color: blueviolet;
   font-size: 30px;
-  
-
 }
 
 .navegacion_enlace--home,
 .navegacion_enlace:hover {
   color: white;
+}
+/*Grid*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Productos*/
+.producto {
+  background-color: #32a877;
+}
+
+.producto_info {
+}
+
+.producto_imagen {
+}
+
+.producto_nombre {
+}
+
+.producto_precio {
 }
