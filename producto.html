@@ -22,21 +22,39 @@
         <img class="header_logo" src="./img/logo.png" alt="logo" />
       </a>
     </header>
-    
+
     <nav class="navegacion">
       <a href="./index.html" class="navegacion_enlace navegacion_enlace--home"
         >Tienda</a
       >
-      <a
-        href="./nosotros.html"
-        class="navegacion_enlace "
-        >Nosotros</a
-      >
+      <a href="./nosotros.html" class="navegacion_enlace">Nosotros</a>
     </nav>
 
     <main class="contenedor">
-        <h1>Producto</h1>
-      </main>
+      <h1>ReactJS</h1>
+      <div class="camiseta">
+        <img class="camiseta__imagen" src="./img/3.jpg" alt="imagen_react" />
+        <div class="camiseta__contenedor">
+          <p>
+            Augue nibh, dictum ac velit eget, lacinia luctus orci. Suspendisse
+            potenti. Phasellus lacus diam, vestibulum non erat id, laoreet
+            malesuada felis. Donec sed porta dolor. Cras auctor nisi vel
+            tincidunt dignissim.
+          </p>
+
+          <form class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected>--Seleccionar talla--</option>
+              <option>L</option>
+              <option>M</option>
+              <option>S</option>
+            </select>
+            <input class="formulario__campo"  type="number" placeholder="Cantidad" min="1">
+            <input class="formulario__submit" type="submit" value="Agregar al carrito">
+          </form>
+        </div>
+      </div>
+    </main>
 
     <footer class="footer">
       <p class="footer__estilos">Tienda Online.Todos los derechos reservados</p>
